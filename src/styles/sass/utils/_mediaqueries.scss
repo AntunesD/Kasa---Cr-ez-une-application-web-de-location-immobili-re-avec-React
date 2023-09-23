@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  header {
+    height: 46px;
+width: 90%;
+    & a {
+      margin-left: 26px;
+      font-size: 12px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+  section {
+    margin: 20px;
+  }
+  .banner {
+    height: 111px;
+    justify-content: start;
+
+    & span {
+      font-size: 28px;
+      margin-left: 16px;
+      margin-right: 102px;
+    }
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    height: 255px;
+    width: 100%;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
