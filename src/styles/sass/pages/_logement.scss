@@ -1,0 +1,12 @@
+@import '../utils/variables';
+
+.logement {
+    color: $Red;
+  max-width: 1240px;
+  width: 100%;
+    & h1 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+}

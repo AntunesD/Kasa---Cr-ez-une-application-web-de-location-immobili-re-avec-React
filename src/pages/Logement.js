@@ -5,6 +5,9 @@ import data from "../Annonces.json";
 // Importation des collapse
 import Collapse from "../components/Collapse";
 
+//Importation du carousel
+import Slideshow from "../components/Slideshow";
+
 function Logement() {
   const { id } = useParams(); // Obtenez l'ID de l'URL
 
@@ -17,17 +20,19 @@ function Logement() {
   }, [id]);
 
   return (
-    <div>
+    <section className="logement">
       {annonce ? ( // Vérifiez si l'annonce a été trouvée avant de l'afficher
-        <div key={annonce.id}>
-          <h2>{annonce.title}</h2>
+        <article key={annonce.id}>
+          <Slideshow images={annonce.pictures}/>
+          <h1>{annonce.title}</h1>
+          <span>{annonce.location}</span>
           <Collapse title="Description" description={annonce.description} />
           <Collapse title="Equipement" description={annonce.equipments} />
-        </div>
+        </article>
       ) : (
         <p>Logement introuvable</p>
       )}
-    </div>
+    </section>
   );
 }
 

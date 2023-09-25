@@ -48,6 +48,27 @@
     }
   }
 
+  .logement {
+    width: auto;
+  }
+
+  .carousel {
+    & img {
+      height: 255px;
+    }
+    &_left {
+      top : 100px
+    }
+    &_right {
+      top: 100px;
+    }
+    &_numero {
+      display: none;
+    }
+    & i {
+      font-size: 19px;
+    }
+  }
   footer {
     font-size: 12px;
   }
