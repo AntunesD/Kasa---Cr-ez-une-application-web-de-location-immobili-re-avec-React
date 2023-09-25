@@ -1,0 +1,65 @@
+@import "../utils/variables";
+
+.collapse {
+  width: 82.5%;
+  margin-bottom: 28px;
+
+  & button {
+    z-index: 2;
+    padding-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    background-color: $Red;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  & div {
+    background-color: #f6f6f6;
+    color: $Red;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 0;
+    overflow: hidden;
+  }
+
+  &_ferme {
+    padding: 0 20px;
+    max-height: 0;
+    transition: 0.7s ease;
+
+    & p {
+      transition: 0.7s ease;
+      transform: translateY(-100px);
+    }
+  }
+
+  &_ouvert {
+    padding: 20px;
+    max-height: 200px;
+    transition: 0.7s ease;
+
+    & p {
+      transition: 0.7s ease;
+      transform: translateY(0);
+    }
+  }
+
+  & i {
+    transition: 0.7s ease-out;
+  }
+
+  & i.rotate {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes fall {
+}

@@ -4,4 +4,6 @@
 @use './pages/home';
 @use './components/cards';
 @use './components/banner';
-@use './utils/mediaqueries'
+@use './pages/about';
+@use './components/collapse';
+@use './utils/mediaqueries';
