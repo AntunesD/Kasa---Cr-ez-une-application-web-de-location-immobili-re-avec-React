@@ -183,6 +183,26 @@ footer {
 }
 
 @keyframes fall {}
+.notFound {
+  padding: 139px 0;
+  color: #FF6060;
+  text-align: center;
+}
+.notFound h1 {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+}
+.notFound p {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 139px 0;
+}
+.notFound a {
+  color: #FF6060;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   header {
     height: 46px;
@@ -215,6 +235,19 @@ footer {
   }
   .collapse {
     width: 100%;
+  }
+  .notFound {
+    padding: 113px 0;
+  }
+  .notFound h1 {
+    font-size: 96px;
+  }
+  .notFound p {
+    font-size: 18px;
+    margin: 113px 0;
+  }
+  .notFound a {
+    font-size: 14px;
   }
   footer {
     font-size: 12px;
