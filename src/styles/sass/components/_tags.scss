@@ -1,0 +1,24 @@
+@import "../utils/variables";
+
+.tags {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+
+    & li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $Red;
+        color: white;
+        border-radius: 10px;
+        height: 25px;
+        min-width: 115px;
+        font-size: 14px;
+        padding : 0  10px;
+        margin-right: 10px ;
+        
+    }
+}

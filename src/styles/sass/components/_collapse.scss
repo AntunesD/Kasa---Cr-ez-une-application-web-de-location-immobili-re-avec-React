@@ -5,7 +5,6 @@
   margin-bottom: 28px;
 
   & button {
-    z-index: 2;
     padding-left: 15px;
     width: 100%;
     display: flex;
@@ -21,45 +20,43 @@
     cursor: pointer;
   }
 
-  & div {
+  & ul {
+    margin-top: 0;
+    padding: 0 20px ;
+    list-style-type: none;
     background-color: #f6f6f6;
     color: $Red;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-top: 0;
     overflow: hidden;
+    transition: 1s ease;
+  }
+
+  & li {
+    margin: 10px 0;
+    transition: 0.7s ease;
   }
 
   &_ferme {
-    padding: 0 20px;
     max-height: 0;
-    transition: 0.7s ease;
-
-    & p {
-      transition: 0.7s ease;
+    & li {
       transform: translateY(-100px);
     }
   }
 
   &_ouvert {
-    padding: 20px;
     max-height: 200px;
-    transition: 0.7s ease;
-
-    & p {
-      transition: 0.7s ease;
+    & li {
       transform: translateY(0);
     }
   }
 
   & i {
     transition: 0.7s ease-out;
+    margin-right: 15px;
   }
 
   & i.rotate {
     transform: rotate(-180deg);
   }
-}
-
-@keyframes fall {
 }

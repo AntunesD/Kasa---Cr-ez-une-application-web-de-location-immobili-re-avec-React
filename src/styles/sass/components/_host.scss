@@ -1,0 +1,15 @@
+.host {
+    display: flex;
+    align-items: center;
+  & ul {
+    padding: 0;
+    list-style-type: none;
+    margin :0 10px;
+    font-size: 18px;
+    text-align: right;
+  }
+      & img {
+        height: 64px;
+        border-radius: 50%;
+      }
+  }

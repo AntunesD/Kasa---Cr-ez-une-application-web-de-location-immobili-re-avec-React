@@ -14,13 +14,13 @@ const Collapse = ({ title, description }) => {
         <i className={`fa-solid fa-chevron-up ${isCollapsed ? "" : "rotate"}`}></i>
       </button>
       
-        <div className={`${isCollapsed ? "collapse_ferme" : "collapse_ouvert"}`} >
+        <ul className={`${isCollapsed ? "collapse_ferme" : "collapse_ouvert"}`} >
           {Array.isArray(description) ? (
-            description.map((item, index) => <p key={index}>{item}</p>)
+            description.map((item, index) => <li key={index}>{item}</li>)
           ) : (
-            <p  >{description}</p>
+            <li  >{description}</li>
           )}
-        </div>
+        </ul>
      
     </div>
   );

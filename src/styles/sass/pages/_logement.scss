@@ -1,12 +1,28 @@
-@import '../utils/variables';
+@import "../utils/variables";
 
 .logement {
-    color: $Red;
+  color: $Red;
   max-width: 1240px;
   width: 100%;
-    & h1 {
-        font-size: 36px;
-        font-weight: 500;
-    }
+  & h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+  }
 
+  & span {
+    font-size: 1.125em;
+  }
+
+  & .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 24px 0;
+    & .collapse {
+      width: 48%;
+    }
+  } 
 }
+
+

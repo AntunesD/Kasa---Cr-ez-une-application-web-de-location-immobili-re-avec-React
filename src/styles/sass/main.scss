@@ -1,12 +1,19 @@
 @use './base/normalize';
+
 @use './components/header';
 @use './components/footer';
-@use './pages/home';
 @use './components/cards';
 @use './components/banner';
-@use './pages/about';
 @use './components/collapse';
+@use './components/slideshow';
+@use './components/tags.scss';
+@use './components/host';
+@use './components/rating';
+
+
+@use './pages/home';
+@use './pages/about';
 @use './pages/notFound';
 @use './pages/logement';
-@use './components/slideshow';
+
 @use './utils/mediaqueries';
