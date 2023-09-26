@@ -28,9 +28,10 @@
   .banner {
     height: 111px;
     justify-content: start;
+    border-radius: 10px;
 
     & span {
-      font-size: 28px;
+      font-size: 24px;
       margin-left: 16px;
       margin-right: 102px;
     }
@@ -43,11 +44,18 @@
     height: 255px;
     width: 100%;
   }
-
   .collapse {
     width: 100%;
-  }
+    margin-bottom: 10px;
 
+    & button {
+      height: 30px;
+      font-size: 13px;
+    }
+    & li {
+      font-size: 12px;
+    }
+  }
   .carousel {
     & img {
       height: 255px;
@@ -94,23 +102,17 @@
     & .tags li {
       font-size: 10px;
       min-width: 84px;
-
     }
 
     & .row {
       flex-direction: column;
       margin-bottom: 0;
-
-      & .collapse {
-        width: 100%;
-        margin-bottom: 20px;
-
-        & button {
-          height: 30px;
-          font-size: 13px;
-        }
-      }
     }
+
+    & .collapse {
+      width: 100%;
+    }
+
     & .hostRating {
       display: flex;
       flex-direction: row-reverse;

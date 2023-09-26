@@ -1,4 +1,5 @@
 {
+  "homepage": "https://AntunesD.github.io/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React",
   "name": "kas",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-css": "sass src/styles/sass/main.scss src/styles/css/main.css",
-    "sass": "sass --watch src/styles/sass:src/styles/css"
+    "sass": "sass --watch src/styles/sass:src/styles/css",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

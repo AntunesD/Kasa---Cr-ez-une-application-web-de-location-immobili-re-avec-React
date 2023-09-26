@@ -307,7 +307,7 @@ footer {
   justify-content: space-between;
   margin: 24px 0;
 }
-.logement .row .collapse {
+.logement .collapse {
   width: 48%;
 }
 
@@ -335,9 +335,10 @@ footer {
   .banner {
     height: 111px;
     justify-content: start;
+    border-radius: 10px;
   }
   .banner span {
-    font-size: 28px;
+    font-size: 24px;
     margin-left: 16px;
     margin-right: 102px;
   }
@@ -350,6 +351,14 @@ footer {
   }
   .collapse {
     width: 100%;
+    margin-bottom: 10px;
+  }
+  .collapse button {
+    height: 30px;
+    font-size: 13px;
+  }
+  .collapse li {
+    font-size: 12px;
   }
   .carousel img {
     height: 255px;
@@ -396,13 +405,8 @@ footer {
     flex-direction: column;
     margin-bottom: 0;
   }
-  .logement .row .collapse {
+  .logement .collapse {
     width: 100%;
-    margin-bottom: 20px;
-  }
-  .logement .row .collapse button {
-    height: 30px;
-    font-size: 13px;
   }
   .logement .hostRating {
     display: flex;

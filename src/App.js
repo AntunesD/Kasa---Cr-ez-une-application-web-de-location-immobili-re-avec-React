@@ -52,6 +52,17 @@ function App() {
             }
             path="*"
           />
+
+          {/* Route pour github pages */}
+          <Route
+            element={
+              <Layout>
+                <Home />
+              </Layout>
+            }
+            path="/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/"
+          />
+
         </Routes>
       </BrowserRouter>
     </div>
