@@ -7,7 +7,7 @@ function Host({ name, picture }) {
   return (
     <div className="host">
       <ul> {nameWithLineBreaks}</ul>
-      <img src={picture} alt="tete de l'haute" />
+      <img src={picture} alt={name} />
     </div>
   );
 }

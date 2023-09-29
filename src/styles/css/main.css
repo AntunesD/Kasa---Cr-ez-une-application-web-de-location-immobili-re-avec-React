@@ -6,8 +6,14 @@
 .layout {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  margin-top: 20px;
 }
 
 header {
@@ -32,6 +38,9 @@ header a {
   text-decoration: none;
   margin-left: 57px;
 }
+header a.active {
+  text-decoration: underline;
+}
 header a:hover {
   text-decoration: underline;
 }
@@ -49,14 +58,14 @@ footer {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
 }
 
 .card {
   height: 340px;
-  width: 27.42%;
+  width: 100%;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -73,11 +82,12 @@ footer {
 .card_content {
   border-radius: 10px;
   position: absolute;
+  margin-top: 0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgb(128, 48, 48) 0%, rgba(255, 96, 96, 0.4980957233) 20%, rgba(190, 126, 137, 0) 30%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
 }
 .card_title {
   position: absolute;
@@ -149,6 +159,7 @@ footer {
   transition: 1s ease;
 }
 .collapse li {
+  font-size: 18px;
   margin: 10px 0;
   transition: 0.7s ease;
 }
@@ -343,6 +354,7 @@ footer {
     margin-right: 102px;
   }
   .cards {
+    display: flex;
     flex-direction: column;
   }
   .card {

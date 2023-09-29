@@ -1,5 +1,3 @@
-
-
 //Importation des ressource pour le routing
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -16,55 +14,23 @@ function App() {
   return (
     <div>
       {/*Préparation des routes*/}
-
       <BrowserRouter>
-        <Routes>
-          <Route
-            element={
-              <Layout>
-                <Home />
-              </Layout>
-            }
-            path="/"
-            exact
-          />
-          <Route
-            element={
-              <Layout>
-                <About />
-              </Layout>
-            }
-            path="/about"
-          />
-          <Route
-            element={
-              <Layout>
-                <Logement />
-              </Layout>
-            }
-            path="/logement/:id"
-          />
-          <Route
-            element={
-              <Layout>
-                <NotFound />
-              </Layout>
-            }
-            path="*"
-          />
+        <Layout>
+          <Routes>
+            <Route element={<Home />} path="/" exact />
+            <Route element={<About />} path="/about" />
+            <Route element={<Logement />} path="/logement/:id" />
+            <Route element={<NotFound />} path="*" />
 
-          {/* Route pour github pages */}
-          <Route
-            element={
-              <Layout>
-                <Home />
-              </Layout>
-            }
-            path="/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/"
-          />
-
-        </Routes>
+            {/* Route pour github pages */}
+            <Route
+              element={<Home />}
+              path="/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/"
+            />
+          </Routes>
+        </Layout>
       </BrowserRouter>
+      ;
     </div>
   );
 }

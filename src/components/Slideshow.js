@@ -28,7 +28,7 @@ function Slideshow({ images }) {
           </ul>
         </nav>
       )} 
-        <img src={images[currentIndex]} alt="Vue du logement" />
+        <img src={images[currentIndex]} alt={`Vue du logement ${currentIndex +1}`} />
     </div>
   );
 }
