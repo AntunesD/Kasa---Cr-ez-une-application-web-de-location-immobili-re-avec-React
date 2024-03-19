@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/css/main.42b96355.css",
+    "main.css": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/css/main.374eccef.css",
     "main.js": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/js/main.06789e3e.js",
     "static/js/787.75e47afc.chunk.js": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/js/787.75e47afc.chunk.js",
     "static/media/ImageAPropos.png": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/media/ImageAPropos.640955dab8c7bff25514.png",
     "static/media/ImageAcceuil.png": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/media/ImageAcceuil.19221376a0aa2549c135.png",
     "index.html": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/index.html",
-    "main.42b96355.css.map": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/css/main.42b96355.css.map",
+    "main.374eccef.css.map": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/css/main.374eccef.css.map",
     "main.06789e3e.js.map": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/js/main.06789e3e.js.map",
     "787.75e47afc.chunk.js.map": "/Kasa_-_Creez_une_application_web_de_location_immobiliere_avec_React/static/js/787.75e47afc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42b96355.css",
+    "static/css/main.374eccef.css",
     "static/js/main.06789e3e.js"
   ]
 }
