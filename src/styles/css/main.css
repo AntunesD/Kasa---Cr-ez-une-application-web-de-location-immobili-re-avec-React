@@ -33,7 +33,8 @@ header ul {
   flex-direction: row;
 }
 header a {
-  color: #FF6060;
+  color: black;
+  font-weight: 500;
   font-size: 1.5em;
   text-decoration: none;
   margin-left: 57px;
@@ -120,12 +121,14 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 .banner span {
   z-index: 2;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat", sans-serif;
 }
 
 .collapse {
@@ -174,6 +177,7 @@ footer {
 }
 .collapse_ouvert li {
   transform: translateY(0);
+  color: black;
 }
 .collapse i {
   transition: 0.7s ease-out;
@@ -295,7 +299,8 @@ footer {
   margin: 139px 0;
 }
 .notFound a {
-  color: #FF6060;
+  color: black;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -311,6 +316,8 @@ footer {
 }
 .logement span {
   font-size: 1.125em;
+  color: black;
+  font-weight: 500;
 }
 .logement .row {
   display: flex;

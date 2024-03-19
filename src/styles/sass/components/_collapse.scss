@@ -36,6 +36,7 @@
     font-size: 18px;
     margin: 10px 0;
     transition: 0.7s ease;
+
   }
 
   &_ferme {
@@ -49,6 +50,7 @@
     max-height: 200px;
     & li {
       transform: translateY(0);
+      color: black;
     }
   }
 

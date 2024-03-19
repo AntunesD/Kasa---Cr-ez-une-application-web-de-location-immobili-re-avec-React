@@ -16,7 +16,8 @@ header {
     flex-direction: row;
   }
   & a {
-    color: $Red;
+    color: black;
+    font-weight: 500;
     font-size: 1.5em; //24px
     text-decoration: none;
     margin-left: 57px;
